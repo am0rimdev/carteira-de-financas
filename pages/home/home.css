@@ -1,0 +1,57 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    min-height: 100vh;
+    padding: 2.5rem 2rem;
+    background-color: #111729;
+    color: #eaebf0;
+}
+
+#app-name {
+    font-size: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 4rem;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 2em;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #444;
+}
+
+.sidebar ul li a:hover {
+    color: #f0a500;
+}
+
+.sidebar .login a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-top: 2px solid #444;
+    padding-top: 1.2rem;
+}
+
+.sidebar .login a:hover {
+    color: #f0a500;
+}
+
+.sidebar .login a::before {
+    content: "👤";
+    margin-right: 10px;
+}
