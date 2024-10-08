@@ -1,0 +1,45 @@
+body {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111729;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eaebf0;
+    width: 35rem;
+    height: 50rem;
+    padding: 3rem;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.register-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.register-input {
+    height: 3rem;
+    padding: 0 0.4rem;
+    border: 2px solid rgb(218, 224, 227);
+    border-radius: 0.5rem;
+}
+
+#register-button {
+    border: 1px solid #111729;
+    border-radius: 0.5rem;
+    font-size: 1em;
+    background-color: #eaebf0;
+    cursor: pointer;
+}
+#register-button:hover {
+    background-color: #dadbe2;
+}

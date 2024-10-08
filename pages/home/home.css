@@ -1,8 +1,6 @@
-aside {
+.sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     width: 20rem;
     min-height: 100vh;
     padding: 2.5rem 2rem;
@@ -11,6 +9,7 @@ aside {
 }
 
 #app-name {
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -35,23 +34,4 @@ aside {
 
 .sidebar ul li a:hover {
     color: #f0a500;
-}
-
-.sidebar .login a {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    border-top: 2px solid #444;
-    padding-top: 1.2rem;
-}
-
-.sidebar .login a:hover {
-    color: #f0a500;
-}
-
-.sidebar .login a::before {
-    content: "👤";
-    margin-right: 10px;
 }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="carteira.css">
+    <title>WalletWise | Carteira</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <section>
+            <h1 id="app-name">WalletWise</h1>
+
+            <nav class="sidebar-navigation">
+                <ul>
+                    <li><a href="/pages/home/home.html">Home</a></li>
+                    <li><a href="/pages/carteira/carteira.html">Carteira</a></li>
+                    <li><a href="">Gráficos</a></li>
+                    <li><a href="/pages/dicas/dicas.html">Dicas de Investimentos</a></li>
+                </ul>
+            </nav>
+        </section>
+    </aside>
+    
+    <main>
+        <div id="secoes-carteira">
+            <button class="open-modal" id="ativos">Ativos</button>
+            <button class="open-modal" id="cadastrar-ativos">Cadastrar Ativos</button>
+            <button type="button" id="historico-transacoes">Histórico de Transações</button>
+        </div>
+
+        <div id="secao-ativos">
+            <h3 id="section-name" class="table-title">Ativos</h3>
+            <table id="tabelaAtivos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo de Ativo</th>
+                        <th>Quantidade comprada</th>
+                        <th>Valor do ativo (R$)</th>
+                        <th>Valor total pago (R$)</th>
+                        <th>Data da compra</th>
+                        <th>Valor atual (R$)</th>
+                        <th>Valor atual total</th>
+                        <th>Lucro (%)</th>
+                        <th>Lucro (R$)</th>
+                        <th>Anotações</th>
+                        <th>Operações</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BBAS3</td>
+                        <td>Ações</td>
+                        <td>100</td>
+                        <td>R$ 27,38</td>
+                        <td>R$ 2738,00</td>
+                        <td>01/01/2024</td>
+                        <td>R$ 26,86</td>
+                        <td>R$ 2686,00</td>
+                        <td>-1,9%</td>
+                        <td>-R$ 52,02</td>
+                        <td>Dividendos</td>
+                        <td class="td-botoes">
+                            <button class="btn-acao vender" id="vender-ativo"></button>
+                            <button class="btn-acao editar" id="editar-ativo" title="Editar ativo"></button>
+                            <button class="btn-acao excluir" id="excluir-ativo" title="Excluir ativo"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>BTC</td>
+                        <td>Criptoativo</td>
+                        <td>0.001</td>
+                        <td>R$ 214497,28</td>
+                        <td>R$ 214,5</td>
+                        <td>01/01/2024</td>
+                        <td>R$ 341860,08</td>
+                        <td>R$ 341,86</td>
+                        <td>59,38%</td>
+                        <td>R$ 127,36</td>
+                        <td>Ano do Halving</td>
+                        <td class="td-botoes">
+                            <button for="modalVenderToggle" class="btn-acao vender"></button>
+                            <button class="btn-acao editar" title="Editar ativo"></button>
+                            <button class="btn-acao excluir" title="Excluir ativo"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MXRF11</td>
+                        <td>FII</td>
+                        <td>100</td>
+                        <td>R$ 10,49</td>
+                        <td>R$ 1049,00</td>
+                        <td>01/01/2024</td>
+                        <td>R$ 9,90</td>
+                        <td>R$ 990,00</td>
+                        <td>-5,62%</td>
+                        <td>-R$ 59,00</td>
+                        <td>Oportunidade de preço</td>
+                        <td class="td-botoes">
+                            <button for="modalVenderToggle" class="btn-acao vender"></button>
+                            <button class="btn-acao editar" title="Editar ativo"></button>
+                            <button class="btn-acao excluir" title="Excluir ativo"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="secao-historico-transacao" class="hidden">
+            <div class="container">
+                <!-- Tabela de Compras -->
+                <h2 class="table-title">Compras</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Tipo do Ativo</th>
+                            <th>Data da Compra</th>
+                            <th>Valor Unitário</th>
+                            <th>Quantidade Comprada</th>
+                            <th>Valor Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BBAS3</td>
+                            <td>Ação</td>
+                            <td>01/01/2024</td>
+                            <td>R$ 27,38</td>
+                            <td>100</td>
+                            <td class="buy">R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>BTC</td>
+                            <td>Criptoativo</td>
+                            <td>01/01/2024</td>
+                            <td>R$ 214497,28</td>
+                            <td>0.001</td>
+                            <td class="buy">R$ 45,00</td>
+                        </tr>
+                        <tr>
+                            <td>MXRF11</td>
+                            <td>FII</td>
+                            <td>01/01/2024</td>
+                            <td>R$ 10,49</td>
+                            <td>100</td>
+                            <td class="buy">R$ 45,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <!-- Tabela de Vendas -->
+                <h2 class="table-title">Vendas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Tipo do Ativo</th>
+                            <th>Data da Venda</th>
+                            <th>Valor Unitário</th>
+                            <th>Quantidade Vendida</th>
+                            <th>Valor Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IBOV</td>
+                            <td>Ação</td>
+                            <td>15/09/2024</td>
+                            <td>R$ 0,366</td>
+                            <td>150</td>
+                            <td class="sell">R$ 54,9</td>
+                        </tr>
+                        <tr>
+                            <td>ETH</td>
+                            <td>Criptoativo</td>
+                            <td>11/09/2024</td>
+                            <td>R$ 0,52</td>
+                            <td>100</td>
+                            <td class="sell">R$ 52,00</td>
+                        </tr>
+                        <tr>
+                            <td>HGLG11</td>
+                            <td>FII</td>
+                            <td>11/09/2024</td>
+                            <td>R$ 0,52</td>
+                            <td>100</td>
+                            <td class="sell">R$ 52,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="form-editar-ativo" class="hidden">
+            <h3>Editar Ativo</h3>
+            <form id="editar-ativo-form">
+                <label for="nome">Nome do Ativo:</label>
+                <input type="text" id="nome" name="nome">
+        
+                <label for="tipo">Tipo de Ativo:</label>
+                <input type="text" id="tipo" name="tipo">
+        
+                <label for="quantidade">Quantidade Comprada:</label>
+                <input type="number" id="quantidade" name="quantidade">
+        
+                <label for="valor">Valor do Ativo (R$):</label>
+                <input type="text" id="valor" name="valor">
+        
+                <label for="valor-total">Valor Total Pago (R$):</label>
+                <input type="text" id="valor-total" name="valor-total">
+        
+                <label for="data">Data da Compra:</label>
+                <input type="date" id="data" name="data">
+        
+                <label for="anotacoes">Anotações:</label>
+                <input type="text" id="anotacoes" name="anotacoes">
+        
+                <button type="submit">Salvar</button>
+                <button type="button" id="cancelar-edicao">Cancelar</button>
+            </form>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="modalVenderToggle" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="modalVenderToggle" class="close-button">&times;</label>
+                    <h2>Vender Ativo</h2>
+                    <form id="formVenderAtivo">
+                        <label for="quantidadeVenda">Quantidade a Vender:</label>
+                        <input type="number" id="quantidadeVenda" required>
+
+                        <label for="precoVenda">Preço de Venda (R$):</label>
+                        <input type="number" id="precoVenda" step="0.01" required>
+
+                        <label for="dataVenda">Data da Venda:</label>
+                        <input type="date" id="dataVenda" required>
+
+                        <button type="submit" id="venderAtivo">Confirmar Venda</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="carteira.js"></script>
+</body>
+</html>

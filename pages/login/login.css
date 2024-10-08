@@ -6,40 +6,50 @@ body {
     background-color: #111729;
 }
 
-#login-form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #eaebf0;
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
+    padding: 3rem;
     gap: 2rem;
     border-radius: 1rem;
 }
 
-#login-fields {
+.login-fields {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     gap: 0.5rem;
 }
 
 .login-input {
-    height: 1.8rem;
+    height: 3rem;
     padding: 0 0.4rem;
+    border: 2px solid rgb(218, 224, 227);
+    border-radius: 0.5rem;
 }
 
 #login-button {
+    border: 1px solid #111729;
+    border-radius: 0.5rem;
+    font-size: 1em;
+    background-color: #eaebf0;
     cursor: pointer;
 }
-
-#footer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
+#login-button:hover {
+    background-color: #dadbe2;
 }
-#footer-form a {
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-form a {
     text-decoration: none;
 }
