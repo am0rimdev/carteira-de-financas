@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Carteira de Investimentos | Home</title>
 </head>
 <body>
@@ -14,9 +15,8 @@
 
             <nav class="sidebar-navigation">
                 <ul>
-                    <li><a href="/pages/home/home.html">Home</a></li>
+                    <li><a href="/pages/dashboard/dashboard.html">Dashboard</a></li>
                     <li><a href="/pages/carteira/carteira.html">Carteira</a></li>
-                    <li><a href="">Gráficos</a></li>
                     <li><a href="/pages/dicas/dicas.html">Dicas de Investimentos</a></li>
                 </ul>
             </nav>
@@ -24,7 +24,17 @@
     </aside>
     
     <main>
-
+        <div class="container">
+            <h2>Gráfico Patrimônio</h2>
+            <canvas id="myDoughnutChart" width="400" height="300"></canvas>
+        </div>
+        
+        <div class="container">
+            <h2 id="titulo-grafico-valores-mensais">Gráfico de Valores Mensais</h2>
+            <canvas id="myChart" width="450" height="300"></canvas>
+        </div>
     </main>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>

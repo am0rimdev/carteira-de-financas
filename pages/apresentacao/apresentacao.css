@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+section {
+    height: 100%;
+    width: 50%;
+}
+section h1 {
+    text-align: center;
+}
+section img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 40rem;
+}
+
+.account-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.account-buttons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #111729;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+}
