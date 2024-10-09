@@ -7,7 +7,7 @@ const myDoughnutChart = new Chart(myDoughnutChartCtx, {
         datasets: [{
             label: 'Valores',
             data: [2690, 1001, 336.11],
-            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+            backgroundColor: ['#5ccb5f', '#36A2EB', '#FFCE56'],
             hoverOffset: 4
         }]
     },
@@ -61,7 +61,7 @@ const dataValues = [
     4027.11
 ];
 
-// Create a gradient for the line
+
 const gradient = myChartCtx.createLinearGradient(0, 0, 0, 400);
 gradient.addColorStop(0, 'rgba(0, 255, 204, 0.4)');
 gradient.addColorStop(1, 'rgba(0, 255, 204, 0.1)');

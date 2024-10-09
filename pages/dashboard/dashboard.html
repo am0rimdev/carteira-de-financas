@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +21,36 @@
                 </ul>
             </nav>
         </section>
+
+        <footer id="sair">
+            <a href="/pages/apresentacao/apresentacao.html">Sair</a>
+        </footer>
     </aside>
     
     <main>
-        <div class="container">
-            <h2>Gráfico Patrimônio</h2>
-            <canvas id="myDoughnutChart" width="400" height="300"></canvas>
+        <div id="wallet-resume">
+            <section>
+                <h2>Resumo da Carteira</h2>
+                <p><strong id="valor-investido">Valor investido:</strong> R$4008,37</p>
+                <p><strong id="resumo-acoes">Ações:</strong> R$2690,00</p>
+                <p><strong id="resumo-criptoativos">Criptoativos:</strong> R$336,11</p>
+                <p><strong id="resumo-fiis">FIIs:</strong> R$1001,00</p>
+                <p><strong id="resumo-valor-atual">Valor atual:</strong> R$4027,11</p>
+                <p><strong id="resumo-resultado">Resultado:</strong> R$18,47</p>
+                <p><strong id="resumo-variacao">Variação:</strong> +0,47%</p>
+            </section>
         </div>
         
-        <div class="container">
-            <h2 id="titulo-grafico-valores-mensais">Gráfico de Valores Mensais</h2>
-            <canvas id="myChart" width="450" height="300"></canvas>
+        <div class="graphics">
+            <div class="container">
+                <h2>Gráfico Patrimônio</h2>
+                <canvas id="myDoughnutChart" width="420" height="320"></canvas>
+            </div>
+            
+            <div class="container">
+                <h2 id="titulo-grafico-valores-mensais">Gráfico de Valores Mensais</h2>
+                <canvas id="myChart" width="420" height="320"></canvas>
+            </div>
         </div>
     </main>
 

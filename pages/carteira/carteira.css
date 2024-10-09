@@ -1,6 +1,9 @@
 main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
     padding: 2rem;
+    width: 100%;
 }
 
 .hidden {
@@ -11,9 +14,12 @@ main {
 /* sidebear style */
 .sidebar {
     display: flex;
+    position: fixed;
     flex-direction: column;
+    justify-content: space-between;
     min-width: 20rem;
     min-height: 100vh;
+    max-height: 100vh;
     padding: 2.5rem 2rem;
     background-color: #111729;
     color: #eaebf0;
@@ -45,6 +51,17 @@ main {
 
 .sidebar ul li a:hover {
     color: #f0a500;
+}
+
+#sair {
+    border-top: 2px solid #444;
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 1rem;
+}
+#sair a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
