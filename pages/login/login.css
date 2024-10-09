@@ -34,11 +34,16 @@ body {
 }
 
 #login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #111729;
     border-radius: 0.5rem;
     font-size: 1em;
     background-color: #eaebf0;
     cursor: pointer;
+    text-decoration: none;
+    color: #111729;
 }
 #login-button:hover {
     background-color: #dadbe2;

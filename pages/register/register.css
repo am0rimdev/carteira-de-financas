@@ -36,6 +36,11 @@ body {
 }
 
 #register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #111729;
     border: 1px solid #111729;
     border-radius: 0.5rem;
     font-size: 1em;
