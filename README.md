@@ -13,7 +13,6 @@ Com isso, o projeto atende tanto novos investidores, por meio de uma interface i
 
 - **Dashboard Interativo**: Apresenta uma visualização clara e atualizada do patrimônio do investidor, além de gráficos para acompanhar o desempenho e os lucros dos investimentos.
 - **Design Intuitivo**: Interface simples e organizada, projetada para evitar confusões e facilitar a navegação, principalmente para investidores inexperientes.
-- **Sistema Responsivo**: O layout é totalmente responsivo, adaptando-se a dispositivos móveis, permitindo que o investidor acompanhe sua carteira de qualquer lugar.
 - **Histórico de Transações**: Permite ao investidor visualizar todas as transações realizadas, tanto compras quanto vendas de ativos.
 - **Cadastramento de Ativos**: Facilita a inserção de novos ativos, permitindo ao investidor adicionar informações como valor, nome, tipo e quantidade de forma simples e prática.
 - **Verificação de Ativos**: Fornece uma visão detalhada dos ativos, exibindo as informações mais relevantes para o investidor de forma clara e organizada.
